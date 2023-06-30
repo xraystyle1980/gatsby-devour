@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { Button } from 'trice-design-sytem-1';
+import { Box } from 'trice-design-sytem-1';
 
 import { Navigation } from ".";
 import config from "../../utils/siteConfig";
@@ -111,6 +113,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <p className="site-banner-desc">
                                     {site.description}
                                 </p>
+                                Try again
+                                <br />
+                                <Button label="Howdy doo" />
+                                <Box boxlabel="THE BOX" />
                             </div>
                         ) : null}
                         <nav className="site-nav">
@@ -152,7 +158,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Ghost
+                                Boo!
                             </a>
                         </div>
                         <div className="site-foot-nav-right">
