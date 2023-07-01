@@ -43,9 +43,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <header
                     className="site-head"
                     style={{
-                        ...(site.cover_image && {
-                            backgroundImage: `url(${site.cover_image})`,
-                        }),
+                        background: 'coral'
                     }}
                 >
                     <div className="container">
@@ -116,7 +114,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     {site.description}
                                 </p>
                                 
-                                <Box boxlabel="THE BoOX" boxcontent="Lets go!" />
+                                <Box boxlabel="Enter you name to get started" boxcontent="Hey, what's your name?" />
 
                             </div>
                         ) : null}
