@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Button } from 'trice-design-sytem-1';
-import { Box } from 'trice-design-sytem-1';
 
 import { Navigation } from ".";
 import config from "../../utils/siteConfig";
+
+import { Button } from 'trice-design-sytem-1'
+import { Box } from 'trice-design-sytem-1'
 
 // Styles
 import "../../styles/app.css";
@@ -107,16 +108,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                         {isHome ? (
                             <div className="site-banner">
+                                
                                 <h1 className="site-banner-title">
                                     {site.title}
                                 </h1>
                                 <p className="site-banner-desc">
                                     {site.description}
                                 </p>
-                                Try again
-                                <br />
-                                <Button label="Howdy doo" />
-                                <Box boxlabel="THE BOX" />
+                                
+                                <Box boxlabel="THE BoOX" boxcontent="Lets go!" />
+
                             </div>
                         ) : null}
                         <nav className="site-nav">
