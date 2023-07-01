@@ -8,7 +8,7 @@ import { Navigation } from ".";
 import config from "../../utils/siteConfig";
 
 import { Button } from 'trice-design-sytem-1'
-import { Box } from 'trice-design-sytem-1'
+import { TextInput } from 'trice-design-sytem-1'
 
 // Styles
 import "../../styles/app.css";
@@ -43,7 +43,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <header
                     className="site-head"
                     style={{
-                        background: 'coral'
+                        ...(site.cover_image && {
+                            backgroundImage: `url(${site.cover_image})`,
+                        }),
                     }}
                 >
                     <div className="container">
@@ -113,9 +115,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <p className="site-banner-desc">
                                     {site.description}
                                 </p>
-                                
-                                <Box boxlabel="Enter you name to get started" boxcontent="Hey, what's your name?" />
-
+                                <TextInput TextInputLabel="Enter your name to get started" boxcontent="What's your name?" />
                             </div>
                         ) : null}
                         <nav className="site-nav">
