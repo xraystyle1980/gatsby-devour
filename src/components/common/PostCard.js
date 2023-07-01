@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { Tags } from "@tryghost/helpers-gatsby";
 import { readingTime as readingTimeHelper } from "@tryghost/helpers";
+import { Button } from 'trice-design-sytem-1';
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`;
@@ -33,6 +34,7 @@ const PostCard = ({ post }) => {
                 <h2 className="post-card-title">{post.title}</h2>
             </header>
             <section className="post-card-excerpt">{post.excerpt}</section>
+            <Button label="Howdy doo" />
             <footer className="post-card-footer">
                 <div className="post-card-footer-left">
                     <div className="post-card-avatar">
